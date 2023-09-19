@@ -1,18 +1,22 @@
 import React from "react";
-import logo from "../assets/desktop_logo.png";
-import { Link } from "react-router-dom";
+import headerLogo from "../assets/colored_logo.png";
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
   return (
-    <header>
-      <img src={logo} alt="logo" className="logo" />
-      <nav>
-        <ul>
-          <li>
-            <Link to="/">Accueil</Link>
+    <header className="header">
+      <img src={headerLogo} alt="logo" className="header__logo" />
+      <nav className="header__nav">
+        <ul className="header__nav-list">
+          <li className="header__nav-item">
+            <NavLink to="/" className="header__nav-link">
+              Accueil
+            </NavLink>
           </li>
-          <li>
-            <Link to="/about">À propos</Link>
+          <li className="header__nav-item">
+            <NavLink to="/about" className="header__nav-link">
+              A Propos
+            </NavLink>
           </li>
         </ul>
       </nav>
