@@ -8,6 +8,10 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  margin: auto;
+  max-width: 1440px;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 code {
@@ -17,12 +21,13 @@ code {
 
 :root {
   --main-color: #ff6060;
-  --text-color: #FFFFFF
+  --text-color: #FFFFFF;
+  --background-color: #F6F6F6;
 }
 
 .header {
   display: flex;
-  padding: 3rem 5rem;
+  margin: 3rem 5rem;
   justify-content: space-between;
 }
 
@@ -47,6 +52,54 @@ code {
 
 .header__nav-link.active {
   text-decoration: underline;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  background-color: var(--background-color);
+  padding: 3rem;
+  margin: 3rem 5rem;
+  border-radius: 25px;
+  justify-content: flex-start;
+}
+  
+.card {
+  flex: 0 0 30%;
+  position: relative;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  aspect-ratio: 2/2;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.1) 66%, #666666);
+  z-index: 0;
+  border-radius: 10px;
+}
+
+
+.card__cover {
+  width: 100%;
+  aspect-ratio: 2/2;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.card__title {
+  width: 50%;
+  position: absolute;
+  z-index: 1;
+  left: 5%;
+  bottom: 5%;
+  color: var(--text-color);
+  font-size: 1rem;
+  font-weight: 500;
 }
 
 .footer {
