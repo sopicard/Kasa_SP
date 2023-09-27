@@ -1,4 +1,3 @@
-// AppRouter.js
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
@@ -10,7 +9,7 @@ function AppRouter() {
   return (
     <Routes>
       <Route index path="/" element={<Home />} />
-      <Route path="/accomodation/:id" element={<Accomodation />} />
+      <Route path="/accommodation/:id" element={<Accomodation />} />
       <Route path="/about" element={<About />} />
       <Route path="*" element={<Error404 />} />
     </Routes>
