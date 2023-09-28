@@ -1,7 +1,7 @@
 import React from "react";
 import Card from "../components/Card";
 import Banner from "../components/Banner";
-import accommodations from "../data/accomodations.json";
+import accommodations from "../data/accommodations.json";
 
 const Home = () => {
   return (

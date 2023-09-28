@@ -125,7 +125,6 @@ code {
   align-items: center;
   padding: 0.5rem;
   border-radius: 5px;
-  cursor: pointer;
 }
 
 .collapse__title {
@@ -135,6 +134,7 @@ code {
 }
 
 .collapse__chevron {
+  cursor: pointer;
   color: var(--text-color);
   font-size: 1.5rem;
   transition: transform 0.6s ease;
@@ -211,8 +211,33 @@ code {
   z-index: 2;
 }
 
+.not-found {
+  text-align: center;
+  margin-top: 5rem;
+  color: var(--main-color);
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+.not-found__title {
+  font-size: 18rem;
+  font-weight: 700;
+}
+
+.not-found__text {
+  font-size: 2.25rem;
+  font-weight: 500;
+}
+
+.not-found__link {
+  font-size: 1.12rem;
+  font-weight: 500;
+  color: var(--main-color);
+}
 
 .footer {
+  margin-top: 5rem;
   background-color: black;
   display: flex;
   flex-direction: column;
