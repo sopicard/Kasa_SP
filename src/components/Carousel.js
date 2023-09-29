@@ -15,10 +15,28 @@ const Carousel = ({ images }) => {
 
   return (
     <div className="carousel">
-      {images.length > 1 && <button onClick={prevImage}>Précédent</button>}
-      <img src={images[currentIndex]} alt="" />
-      {images.length > 1 && <button onClick={nextImage}>Suivant</button>}
-      {images.length > 1 && <p>{`${currentIndex + 1}/${images.length}`}</p>}
+      {images.length > 1 && (
+        <button
+          className="carousel__button carousel__button--prev"
+          onClick={prevImage}
+        >
+          <i className="carousel__chevron fa-solid fa-chevron-left"></i>
+        </button>
+      )}
+      <img className="carousel__img" src={images[currentIndex]} alt="" />
+      {images.length > 1 && (
+        <button
+          className="carousel__button carousel__button--next"
+          onClick={nextImage}
+        >
+          <i className="carousel__chevron fa-solid fa-chevron-right"></i>
+        </button>
+      )}
+      {images.length > 1 && (
+        <p className="carousel__number">
+          {`${currentIndex + 1}/${images.length}`}
+        </p>
+      )}
     </div>
   );
 };

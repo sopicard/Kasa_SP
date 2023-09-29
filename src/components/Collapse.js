@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const Collapse = ({ title, children }) => {
+const Collapse = ({ title, children, isList }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -14,7 +14,15 @@ const Collapse = ({ title, children }) => {
         ></i>
       </div>
       <div className={`collapse__content ${isOpen ? "open" : " "}`}>
-        <p className="collapse__text">{children}</p>
+        {isList ? (
+          <ul className="collapse__list">
+            {children.map((item, index) => (
+              <li key={index}>{item}</li>
+            ))}
+          </ul>
+        ) : (
+          <p className="collapse__text">{children}</p>
+        )}
       </div>
     </div>
   );
