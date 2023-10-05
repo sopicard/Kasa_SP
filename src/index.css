@@ -23,6 +23,18 @@ code {
   --main-color: #ff6060;
   --text-color: #FFFFFF;
   --background-color: #F6F6F6;
+  --font-size-xxxsmall: 0.6rem;
+  --font-size-xxsmall: 0.7rem;
+  --font-size-xsmall: 0.8rem;
+  --font-size-small: 0.9rem;
+  --font-size-1: 1rem;
+  --font-size-1_1: 1.1rem;
+  --font-size-1_2: 1.5rem;
+  --font-size-large: 2.25rem;
+  --font-size-xlarge: 3rem;
+  --font-size-xxlarge: 6rem;
+  --font-size-xxxlarge: 11rem;
+  --font-size-very-large: 18rem;
 }
 
 .main-container {
@@ -48,7 +60,7 @@ code {
 }
 
 .header__nav-link {
-  font-size: 1.5rem;
+  font-size: var(--font-size-regular1_2);
   font-weight: 500;
   color: var(--main-color);
   text-decoration: none;
@@ -94,7 +106,7 @@ code {
 .banner__title {
   color: var(--text-color);
   font-weight: 500;
-  font-size: 3rem;
+  font-size: var(--font-size-xlarge);
   position: relative;
   z-index: 2;
   padding-left: 1rem;
@@ -152,7 +164,7 @@ code {
   left: 5%;
   bottom: 5%;
   color: var(--text-color);
-  font-size: 1rem;
+  font-size: var(--font-size-1);
   font-weight: 500;
 }
 
@@ -188,14 +200,14 @@ code {
 
 .collapse__title {
   color: var(--text-color);
-  font-size: 1.5rem;
+  font-size: var(--font-size-1_2);
   font-weight: 500;
 }
 
 .collapse__chevron {
   cursor: pointer;
   color: var(--text-color);
-  font-size: 1.5rem;
+  font-size: var(--font-size-1_2);
   transition: transform 0.6s ease;
 }
 
@@ -207,7 +219,7 @@ code {
   grid-column: 1 / -1;
   grid-row: 2;
   display: grid;
-  font-size: 1.1rem;
+  font-size: var(--font-size-1_1);
   font-weight: 400;
   background-color: var(--background-color);
   color: var(--main-color);
@@ -226,13 +238,12 @@ code {
 }
 
 .collapse__text {
-  margin: 1rem;
-  transition: all 0.8s ease-in-out;
-  transform: translateY(-100%);
+  margin: -1rem 1rem 1rem 1rem;
+  transition: all 0.6s ease-in-out;
 }
 
 .collapse__content.open .collapse__text {
-  transform: translateY(0);
+  margin-top: 1rem;
 }
 
 /* VERSION FLEX */
@@ -259,14 +270,14 @@ code {
 
 .collapse__title {
   color: var(--text-color);
-  font-size: 1.5rem;
+  font-size: var(--font-size-1_2);
   font-weight: 500;
 }
 
 .collapse__chevron {
   cursor: pointer;
   color: var(--text-color);
-  font-size: 1.5rem;
+  font-size: var(--font-size-1_2);
   transition: transform 0.6s ease;
 }
 
@@ -276,7 +287,7 @@ code {
 
 .collapse__content {
   display: flex;
-  font-size: 1rem;
+  font-size: var(--font-size-1);
   font-weight: 400;
   background-color: var(--background-color);
   color: var(--main-color);
@@ -344,7 +355,7 @@ code {
 
 .carousel__chevron {
   color: var(--text-color);
-  font-size: 3rem;
+  font-size: var(--font-size-xlarge);
 }
 
 .carousel__number {
@@ -353,7 +364,7 @@ code {
   left: 50%;
   transform: translateX(-50%);
   z-index: 2;
-  font-size: 1.12rem;
+  font-size: var(--font-size-1_1);
   font-weight: 500;
   color: var(--text-color);
   padding: 1rem;
@@ -381,12 +392,12 @@ code {
 
 .accommodation__title {
   font-weight: 500;
-  font-size: 2.25rem;
+  font-size: var(--font-size-large);
 }
 
 .accommodation__location {
   font-weight: 500;
-  font-size: 1.12rem;
+  font-size: var(--font-size-1_1);
 }
 
 .accommodation__tags {
@@ -400,7 +411,7 @@ code {
   padding: 0.2rem 2rem;
   border-radius: 10px;
   font-weight: 500;
-  font-size: 0.9rem;
+  font-size: var(--font-size-small);
   display: flex;
   align-items: center;
 }
@@ -428,7 +439,7 @@ code {
 
 .host__name {
   font-weight: 500;
-  font-size: 1.12rem;
+  font-size: var(--font-size-1_1);
   display: flex;
   flex-direction: column;
   padding-top: 0.5rem;
@@ -463,17 +474,17 @@ code {
 }
 
 .not-found__title {
-  font-size: 18rem;
+  font-size: var(--font-size-very-large);
   font-weight: 700;
 }
 
 .not-found__text {
-  font-size: 2.25rem;
+  font-size: var(--font-size-large);
   font-weight: 500;
 }
 
 .not-found__link {
-  font-size: 1.12rem;
+  font-size: var(--font-size-1_1);
   font-weight: 500;
   color: var(--main-color);
 }
@@ -495,7 +506,7 @@ code {
 
 .footer__copyright {
   color: var(--text-color);
-  font-size: 1.5rem;
+  font-size: var(--font-size-1_2);
   font-weight: 500;
 }
 
@@ -518,7 +529,7 @@ code {
   }
 
   .header__nav-link {
-    font-size: 0.75rem;}
+    font-size: var(--font-size-xxsmall);}
 
   .header__nav-list {
     gap: 2rem;
@@ -536,7 +547,7 @@ code {
   }
 
   .banner__title {
-    font-size: 1.5rem;
+    font-size: var(--font-size-1_2);
   }
 
   .banner__title .break {
@@ -581,15 +592,15 @@ code {
   }
 
   .collapse__title {
-    font-size: 0.81rem;
+    font-size: var(--font-size-xsmall);
   }
 
   .collapse__chevron {
-    font-size: 1rem;
+    font-size: var(--font-size-1);
   }
 
   .collapse__content {
-    font-size: 0.75rem;
+    font-size: var(--font-size-xxsmall);
   }
 
   .carousel {
@@ -599,7 +610,7 @@ code {
   }
 
   .carousel__chevron {
-    font-size: 1.5rem;
+    font-size: var(--font-size-1_2);
   }
 
   .carousel__number {
@@ -616,7 +627,16 @@ code {
   }
 
   .accommodation__title {
-    font-size: 1.12rem;
+    font-size: var(--font-size-1_1);
+  }
+
+  .accommodation__location {
+    font-size: var(--font-size-xsmall);
+  }
+
+  .accommodation__item {
+    font-size: var(--font-size-xxxsmall);
+    padding: 0.2rem 1rem;
   }
 
   .host-stars {
@@ -631,7 +651,7 @@ code {
   }
 
   .host__name {
-    font-size: 0.75rem;
+    font-size: var(--font-size-xxsmall);
   }
 
   .host__img {
@@ -639,13 +659,8 @@ code {
     height: 32px;
   }
 
-  .accommodation__item {
-    font-size: 0.62rem;
-    padding: 0.2rem 1rem;
-  }
-
-  .accommodation__location {
-    font-size: 0.87rem;
+  .stars {
+    font-size: smaller;
   }
 
   .description-equipments {
@@ -658,12 +673,28 @@ code {
     width: 100%;
   }
 
+  .not-found__title {
+    font-size: var(--font-size-xxlarge);
+  }
+
+  .not-found__text {
+    font-size: var(--font-size-1_1);
+  }
+
+  .not-found__text .break{
+    display: block;
+  }
+
+  .not-found__link {
+    font-size: var(--font-size-xsmall);
+  }
+
   .footer {
     gap: 1rem;
   }
 
   .footer__copyright {
-    font-size: 0.7rem;
+    font-size: var(--font-size-xxsmall);
   }
 
   .footer__copyright .break {
