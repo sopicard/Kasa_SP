@@ -168,7 +168,6 @@ code {
   font-weight: 500;
 }
 
-/* VERSION GRID */
 .collapses-container {
   padding: 0 11rem;
   display: flex;
@@ -245,71 +244,6 @@ code {
 .collapse__content.open .collapse__text {
   margin-top: 1rem;
 }
-
-/* VERSION FLEX */
-/* .collapses-container {       
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  padding: 0 11rem;
-}
-  
-.collapse {
-  display: flex; 
-  flex-direction: column;  
-}
-
-.collapse__header {   
-  background-color: var(--main-color);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0.5rem;
-  border-radius: 5px;
-}
-
-.collapse__title {
-  color: var(--text-color);
-  font-size: var(--font-size-1_2);
-  font-weight: 500;
-}
-
-.collapse__chevron {
-  cursor: pointer;
-  color: var(--text-color);
-  font-size: var(--font-size-1_2);
-  transition: transform 0.6s ease;
-}
-
-.collapse__chevron--rotate {
-  transform: rotate(-180deg);
-}
-
-.collapse__content {
-  display: flex;
-  font-size: var(--font-size-1);
-  font-weight: 400;
-  background-color: var(--background-color);
-  color: var(--main-color);
-  border-radius: 0px 0px 5px 5px;
-  overflow: hidden;
-  transition: all 0.8s ease-in-out;
-  height: 0;
-}
-
-.collapse__content.open {
-  height: 100%;
-}
-
-.collapse__text {
-  padding: 1rem;
-  transition: all 0.9s ease-in-out;
-  transform: translateY(-100%);
-}
-
-.collapse__content.open .collapse__text {
-  transform: translateY(0);
-} */
 
 .collapse__list {
   list-style-type: none;
@@ -425,8 +359,6 @@ code {
 
 .host__info {
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
   gap: 0.5rem;
 }
 
@@ -442,7 +374,8 @@ code {
   font-size: var(--font-size-1_1);
   display: flex;
   flex-direction: column;
-  padding-top: 0.5rem;
+  align-self: center;
+  align-items: flex-end;
   color: var(--main-color);
 }
 
@@ -495,7 +428,7 @@ code {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 40vh;
+  height: 209px;
   gap: 2rem;
 }
 
@@ -517,7 +450,7 @@ code {
 @media screen and (max-width: 767px) {
 
   .main-container {
-    padding: 1rem;
+    padding: 1.2rem;
   }
 
   .header {
@@ -575,7 +508,7 @@ code {
 
   .collapses-container {
     padding: 0;
-    gap: 1rem;
+    gap: 1.2rem;
     margin-bottom: 0.5rem;
   }
 
@@ -647,7 +580,7 @@ code {
   }
 
   .host__info {
-    align-items: flex-end;
+    align-items: center;
   }
 
   .host__name {
