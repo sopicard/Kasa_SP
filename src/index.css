@@ -395,7 +395,6 @@ code {
 .description-equipments {
   display: flex;
   gap: 4rem;
-  margin-bottom: 3rem;
 }
 
 .description__container, .equipments__container {
