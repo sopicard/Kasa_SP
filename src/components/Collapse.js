@@ -13,7 +13,7 @@ const Collapse = ({ title, children }) => {
           }`}
         ></i>
       </div>
-      <div className={`collapse__content ${isOpen ? "open" : " "}`}>
+      <div className={`collapse__content ${isOpen ? "open" : ""}`}>
         {children}
       </div>
     </div>

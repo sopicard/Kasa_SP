@@ -282,6 +282,7 @@ code {
   margin: 0;
   background: none;
   border: none;
+  cursor: pointer;
 }
 
 .carousel__button--prev {
@@ -341,6 +342,7 @@ code {
 
 .accommodation__tags {
   display: flex;
+  flex-wrap: wrap;
   gap: 1rem;
 }
 
